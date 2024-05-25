@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>Comprendre les Maths facilement.com</title>
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="bouton3.js"></script>
+    <script src="fonctions.js"></script> <!-- Nouveau fichier pour les fonctions JavaScript -->
+</head>
+<body>
+    <a href="index.html">
+        <button class="favorite styled" type="button">Menu</button>
+    </a>
+    <a href="bouton 1.html">
+        <button class="favorite styled" type="button">Les Fonctions affines</button>
+    </a>
+    <a href="bouton 2.html">
+        <button class="favorite styled" type="button">Les fonctions du second degré</button>
+    </a>
+    <a href="bouton 3.html">
+        <button class="favorite styled" type="button" style="background-color: #393258; color: #fff;">Les Fonctions trigonométriques</button>
+    </a>
+    <a href="bouton 4.html">
+        <button class="favorite styled" type="button">Calcul de dérivérs</button>
+    </a>
+    <a href="bouton 5.html">
+        <button class="favorite styled" type="button" >Calcul de primitives</button>
+      </a>
+    <h1>Les Fonctions trigonométriques</h1>
+    <div class="video-grande">
+        <video controls autoplay muted>
+            <source src="trigomp4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <p>Les fonctions trigonométriques sont des fonctions mathématiques qui étudient les relations entre les angles et les longueurs des côtés d'un triangle, ainsi que les propriétés des fonctions périodiques. Les fonctions trigonométriques les plus fondamentales sont le sinus (sin), le cosinus (cos), et la tangente (tan), mais il en existe d'autres comme le cotangente (cot), la sécante (sec), et la cosécante (csc).</p>
+
+    <label for="a">Valeur de a (8 nombres max) :</label><br>
+    <input type="number" id="a" name="a"><br>
+    <label for="b">Valeur de b (8 nombres max) :</label><br>
+    <input type="number" id="b" name="b"><br>
+    <label for="c">Valeur de c (8 nombres max) :</label><br>
+    <input type="number" id="c" name="c"><br>
+    <button onclick="fonctionsin()">Tracer la courbe de sinus</button>
+    <button onclick="fonctioncos()">Tracer la courbe de cosinus</button>
+    <button onclick="fonctiontan()">Tracer la courbe de tangente</button>
+
+    <!-- Canvas pour le graphique -->
+    <canvas id="myChart" width="800" height="400"></canvas>
+
+    <!-- Liste des fonctions trigonométriques -->
+    <ul>
+        <li>Sinus (sin) : Le sinus d'un angle dans un triangle rectangle est défini comme le rapport de la longueur du côté opposé à l'angle sur la longueur de l'hypoténuse. En termes plus simples, dans un triangle rectangle, sin(θ) = longueur du côté opposé / longueur de l'hypoténuse.</li><br />
+        <li>Cosinus (cos) : Le cosinus d'un angle dans un triangle rectangle est défini comme le rapport de la longueur du côté adjacent à l'angle sur la longueur de l'hypoténuse. En termes plus simples, dans un triangle rectangle, cos(θ) = longueur du côté adjacent / longueur de l'hypoténuse.</li><br />
+        <li>Tangente (tan) : La tangente d'un angle dans un triangle rectangle est définie comme le rapport de la longueur du côté opposé à l'angle sur la longueur du côté adjacent. En termes plus simples, dans un triangle rectangle, tan(θ) = longueur du côté opposé / longueur du côté adjacent.</li><br />
+    </ul>
+    <p>Ces trois fonctions de base peuvent être définies en termes de la géométrie du cercle unité dans le plan cartésien, où l'angle θ est la mesure de rotation à partir de l'axe des x positif.</p>
+    <p>Les fonctions trigonométriques sont également périodiques, ce qui signifie qu'elles se répètent à intervalles réguliers. La période des fonctions trigonométriques est 2π radians ou 360 degrés. Cela signifie que sin(θ + 2π) = sin(θ), cos(θ + 2π) = cos(θ), et tan(θ + 2π) = tan(θ) pour tous les angles θ.</p>
+    <p>En utilisant les fonctions trigonométriques, il est possible de modéliser et de résoudre divers problèmes mathématiques et physiques, notamment en géométrie, en trigonométrie, en analyse, en physique, en ingénierie et dans d'autres domaines scientifiques.</p>
+    
+    <!-- Boutons pour trouver le minimum et le maximum -->
+    <button onclick="findMinAndMax()">Trouver le minimum et le maximum de la courbe</button>
+    <div id="minMaxValues"></div> <!-- Div pour afficher les valeurs -->
+</body>
+</html>
+

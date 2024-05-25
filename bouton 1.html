@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>Comprendre les Maths facilement.com</title>
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="bouton1.js"></script>
+</head>
+<body>
+    <a href="index.html">
+        <button class="favorite styled" type="button">Menu</button>
+    </a>  
+    <a href="bouton 1.html">
+        <button class="favorite styled" type="button" style="background-color: #393258; color: #fff;">Les Fonctions affines</button>
+    </a>  
+    <a href="bouton 2.html">
+        <button class="favorite styled" type="button">Les fonctions du second degré</button>
+    
+    </a>
+    <a href="bouton 3.html">
+        <button class="favorite styled" type="button">Les fonctions trigonométriques</button>
+    </a>
+    <a href="bouton 4.html">
+        <button class="favorite styled" type="button">Calcul de dérivées</button>
+    </a> 
+    <a href="bouton 5.html">
+        <button class="favorite styled" type="button" >Calcul de primitives</button>
+      </a>
+    <h1>Les fonctions affines</h1>
+    <div class="video-grande">
+        <video controls autoplay muted>
+            <source src="fonctions affines.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <p> Les fonctions affines, parfois appelées fonctions linéaires, sont un concept fondamental en mathématiques. Elles sont représentées par des expressions algébriques de la forme :</p>
+    <br />
+    <li>f(x)=ax+b</li>
+    <p>où \( a \) et \( b \) sont des constantes réelles, et \( x \) est la variable indépendante.</p>
+    <p>Voici quelques points importants à retenir sur les fonctions affines :</p>
+    <ul>
+        <li>La constante \( b \) est l'ordonnée à l'origine, c'est-à-dire le point où la droite intersecte l'axe des ordonnées (l'axe vertical) lorsque \( x = 0 \).</li>
+        <li>Le coefficient \( a \) est le coefficient directeur de la droite, qui détermine sa pente.</li>
+        <li>Les fonctions affines sont représentées par des droites sur un graphique cartésien.</li>
+        <li>Si \( a > 0 \), la droite monte vers la droite lorsque \( x \) augmente, et si \( a < 0 \), la droite descend vers la droite lorsque \( x \) augmente.</li>
+        <li>Une valeur positive de \( b \) déplace la droite vers le haut, tandis qu'une valeur négative de \( b \) la déplace vers le bas.</li>
+    </ul>
+    <p>Les fonctions affines sont largement utilisées en mathématiques, en sciences, en économie et dans d'autres domaines pour modéliser des relations linéaires entre les variables. Elles sont également un outil précieux dans l'analyse de données et la modélisation de phénomènes du monde réel.</p>
+    <br />
+    <label for="valeur-de-a">Valeur de  a  :</label><br>
+    <input type="number" id="valeur-de-a" name="a" required minlength="4" maxlength="8" size="10"><br>
+
+    <label for="valeur-de-b">Valeur de  b  :</label><br>
+    <input type="number" id="valeur-de-b" name="b" required minlength="4" maxlength="8" size="10"><br>
+
+    <button onclick="tracerCourbe()">Tracer la courbe</button>
+
+    <!-- Canvas pour le graphique -->
+    <canvas id="myChart" width="800" height="400"></canvas>
+</body>
+</html>

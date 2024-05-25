@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>Comprendre les Maths facilement.com</title>
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="bouton2.js"></script>
+</head>
+<body>
+    <a href="index.html">
+        <button class="favorite styled" type="button">Menu</button>
+    </a>  
+    <a href="bouton 1.html">
+        <button class="favorite styled" type="button">Les Fonctions affines</button>
+    </a>  
+    <a href="bouton 2.html">
+        <button class="favorite styled" type="button" style="background-color: #393258; color: #fff;">Les Fonctions du second degré</button>
+    </a>
+    <a href="bouton 3.html">
+        <button class="favorite styled" type="button">Les fonctions trigonométriques</button>
+    </a>
+    <a href="bouton 4.html">
+        <button class="favorite styled" type="button">Calcul de dérivées</button>
+    </a> 
+    <a href="bouton 5.html">
+        <button class="favorite styled" type="button" >Calcul de primitives</button>
+      </a>
+    <h1> Les Fonctions du second degré</h1>
+    <div class="video-grande">
+        <video controls autoplay muted>
+            <source src="second degré.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <p> Les fonctions du second degré, également connues sous le nom de fonctions quadratiques, sont des fonctions mathématiques qui sont représentées par une expression de la forme :</p><br />
+    <li>f(x)=ax**2+bx+c</li><br />
+    <p>o&ugrave; 'a', 'b' et 'c' sont des constantes r&eacute;elles et 'x' est la variable ind&eacute;pendante.</p>
+    
+        <label for="a">Valeur de a (8 nombres max) :</label><br>
+        <input type="number" id="a" name="a" ><br>
+        <label for="b">Valeur de b (8 nombres max) :</label><br>
+        <input type="number" id="b" name="b" ><br>
+        <label for="c">Valeur de c (8 nombres max) :</label><br>
+        <input type="number" id="c" name="c" ><br>
+        <button onclick="tracerCourbe()">Tracer la courbe</button>
+   
+
+    <!-- Canvas pour le graphique -->
+    <canvas id="myChart" class="full-width" width="800" height="400"></canvas>
+
+    <p>Voici quelques points importants &agrave; retenir sur les fonctions du second degr&eacute; :</p>
+
+    <p>Repr&eacute;sentation graphique : Les fonctions du second degr&eacute; sont g&eacute;n&eacute;ralement repr&eacute;sent&eacute;es par des paraboles sur un graphique cart&eacute;sien. La forme de la parabole d&eacute;pend des valeurs des coefficients 'a', 'b' et 'c'.</p>
+
+    <p>Direction de l'ouverture de la parabole : La parabole s'ouvre vers le haut si 'a' est positif (+) et vers le bas si 'a' est n&eacute;gatif (-). Si 'a' est nul (0), la fonction devient une fonction lin&eacute;aire.</p>
+
+    <p>Sommet de la parabole : Les coordonn&eacute;es du sommet de la parabole peuvent &ecirc;tre trouv&eacute;es en utilisant la formule x = -b / (2a) pour trouver la valeur de 'x', puis en substituant cette valeur dans la fonction pour trouver la valeur correspondante de 'y'.</p>
+
+    <p>Intersection avec l'axe des abscisses : Les points o&ugrave; la parabole intersecte l'axe des abscisses sont appel&eacute;s les racines de la fonction. Ces points peuvent &ecirc;tre trouv&eacute;s en r&eacute;solvant l'&eacute;quation quadratique ax^2 + bx + c = 0.</p>
+
+    <p>Forme canonique : Les fonctions du second degr&eacute; peuvent &eacute;galement &ecirc;tre &eacute;crites sous forme canonique, qui est de la forme f(x) = a(x - h)^2 + k, o&ugrave; (h, k) sont les coordonn&eacute;es du sommet de la parabole.</p>
+
+    <p>Les fonctions du second degr&eacute; sont utilis&eacute;es dans de nombreux domaines, notamment en physique, en ing&eacute;nierie, en &eacute;conomie et en informatique, pour mod&eacute;liser divers ph&eacute;nom&egrave;nes qui peuvent &ecirc;tre repr&eacute;sent&eacute;s par des formes paraboliques.</p>
+</body>
+</html>
+
+
+
+
+
+
+
+

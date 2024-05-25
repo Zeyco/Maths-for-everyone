@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calcul primitives</title>
+  <link rel="stylesheet" type="text/css" href="test.css">
+  <script src="bouton4.js"></script>
+</head>
+<body>
+  <a href="index.html">
+    <button class="favorite styled" type="button">Menu</button>
+  </a>
+  <a href="bouton 1.html">
+    <button class="favorite styled" type="button">Les Fonctions affines</button>
+  </a>
+  <a href="bouton 2.html">
+    <button class="favorite styled" type="button">Les Fonctions du second degré</button>
+  </a>
+  <a href="bouton 3.html">
+    <button class="favorite styled" type="button">Les fonctions trigonométriques</button>
+  </a>
+  <a href="bouton 4.html">
+    <button class="favorite styled" type="button" >Calcul de dérivées</button>
+  </a>
+  <a href="bouton 5 .html">
+    <button class="favorite styled" type="button" style="background-color: #393258; color: #fff;">Calcul de primitives</button>
+  </a>
+  <div class="video-grande">
+    <video controls autoplay muted>
+        <source src="7330180971683220778.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+  <h1>Primitives</h1>
+  <p>
+    La primitive d'une fonction \( f(x) \) est une fonction \( F(x) \) telle que \( F'(x) = f(x) \). Il existe une infinité de primitives pour une fonction donnée, qui ne diffèrent que d'une constante.
+  </p>
+  <ul>
+    <li>∫\( x^n \)dx = \( \frac{{x^{n+1}}}{{n+1}} \) + C (n ≠ -1)</li>
+    <li>∫\( k \)dx = \( kx \) + C (k étant une constante)</li>
+    <li>∫\( e^x \)dx = \( e^x \) + C</li>
+    <li>∫\( ln(x) \)dx = \( x \cdot ln(x) - x \) + C</li>
+    <li>∫\( sin(x) \)dx = \( -cos(x) \) + C</li>
+    <li>∫\( cos(x) \)dx = \( sin(x) \) + C</li>
+    <li>∫\( tan(x) \)dx = \( -ln(cos(x)) \) + C</li>
+    <li>∫\( arcsin(x) \)dx = \( x \cdot arcsin(x) + \sqrt{1 - x^2} \) + C</li>
+    <li>∫\( arccos(x) \)dx = \( x \cdot arccos(x) - \sqrt{1 - x^2} \) + C</li>
+    <li>∫\( arctan(x) \)dx = \( x \cdot arctan(x) - \frac{1}{2} \cdot ln(1 + x^2) \) + C</li>
+    <li>∫\( sinh(x) \)dx = \( cosh(x) \) + C</li>
+    <li>∫\( cosh(x) \)dx = \( sinh(x) \) + C</li>
+    <li>∫\( tanh(x) \)dx = \( ln(cosh(x)) \) + C</li>
+    <li>∫\( arcsinh(x) \)dx = \( x \cdot arcsinh(x) - \sqrt{1 + x^2} \) + C</li>
+    <li>∫\( arccosh(x) \)dx = \( x \cdot arccosh(x) - \sqrt{x^2 - 1} \) + C</li>
+    <li>∫\( arctanh(x) \)dx = \( x \cdot arctanh(x) + \frac{1}{2} \cdot ln(1 - x^2) \) + C</li>
+  </ul>
+
+  <h2>Calcul de primitives</h2>
+
+  <input type="text" id="primitiveFunctionInput" placeholder="Entrez votre fonction pour la primitive">
+  <button type="button" id="primitiveButton">Calculer la primitive</button>
+
+  <div id="primitiveResult"></div>
+
+</body>
+</html>

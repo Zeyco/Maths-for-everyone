@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calcul primitives</title>
+  <link rel="stylesheet" type="text/css" href="test.css">
+  <script src="bouton4.js"></script>
+</head>
+<body>
+  <a href="index.html">
+    <button class="favorite styled" type="button">Menu</button>
+  </a>
+  <a href="bouton 1.html">
+    <button class="favorite styled" type="button">Les Fonctions affines</button>
+  </a>
+  <a href="bouton 2.html">
+    <button class="favorite styled" type="button" >Les Fonctions du second degré</button>
+  </a>
+  <a href="bouton 3.html">
+    <button class="favorite styled" type="button">Les fonctions trigonométriques</button>
+  </a>
+  <a href="bouton 4.html">
+    <button class="favorite styled" type="button" style="background-color: #393258; color: #fff;">Calcul de dérivées</button>
+  </a>
+  <a href="bouton 5 .html">
+    <button class="favorite styled" type="button" >Calcul de primitives</button>
+  </a>
+  <div class="video-grande">
+    <video controls autoplay muted>
+        <source src="Dérivée.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <h1>Dérivées et primitives courantes</h1>
+  <h2>Dérivées</h2>
+  <p>
+    La dérivée d'une fonction f(x) représente la variation instantanée de cette fonction par rapport à la variable x. Elle est notée f'(x) ou df/dx.
+  </p>
+  <ul>
+    <li>(x^n)' = n*x^(n-1) (n étant un réel)</li>
+    <li>(k)' = 0 (k étant une constante)</li>
+    <li>(e^x)' = e^x</li>
+    <li>(ln(x))' = 1/x</li>
+    <li>(sin(x))' = cos(x)</li>
+    <li>(cos(x))' = -sin(x)</li>
+    <li>(tan(x))' = 1 / cos(x)^2</li>
+    <li>(arcsin(x))' = 1 / sqrt(1 - x^2)</li>
+    <li>(arccos(x))' = -1 / sqrt(1 - x^2)</li>
+    <li>(arctan(x))' = 1 / (1 + x^2)</li>
+    <li>(sinh(x))' = cosh(x)</li>
+    <li>(cosh(x))' = sinh(x)</li>
+    <li>(tanh(x))' = 1 / cosh(x)^2</li>
+    <li>(arcsinh(x))' = 1 / sqrt(1 + x^2)</li>
+    <li>(arccosh(x))' = 1 / sqrt(x^2 - 1)</li>
+    <li>(arctanh(x))' = 1 / (1 - x^2)</li>
+  </ul>
+
+ 
+  <h2>Calcul de dérivées </h2>
+  <input type="text" id="derivativeFunctionInput" placeholder="Entrez votre fonction pour la dérivée">
+  <button type="button" id="deriveButton">Calculer la dérivée</button>
+
+
+  <div id="result"></div>
+
+</div>
+</body>
+</html>
